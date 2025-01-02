@@ -35,34 +35,49 @@
 .menu {
     
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 50px;
+    right: 16em;
     z-index: 2;
     /* Garante que o menu fique acima da sobreposição */
 }
 
-.menu ul {
+ ul {
     font-family: 'Poppins';
     list-style: none;
     display: flex;
-    gap: 1em;
+    gap: 7em;
 }
 
-.menu ul li a {
+li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  a {
+    position: relative;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 5px 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1em;
-    transition: background-color 0.3s ease;
-}
+    color: whitesmoke;
+    font-size: 1.3em;
+    
+  }
+  
+  a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Distância da linha em relação ao texto */
+    left: 0; /* Começa na esquerda */
+    width: 0; /* Inicialmente invisível */
+    height: 2px; /* Altura da borda */
+    background-color: white;
+    transition: width 0.3s ease-in-out; /* Anima somente a largura */
+    
+  }
+  
+  a:hover::after {
+    width: 100%; /* Expande a linha */
+  }
 
-.menu ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-}
+
 
 /* Estiliza o letreiro */
 .banner {
