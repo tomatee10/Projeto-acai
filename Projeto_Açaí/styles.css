@@ -1,0 +1,79 @@
+/* Reseta os estilos padrão */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a foto de fundo */
+.background {
+    background-image: url('imgs/uma\ tigela\ de\ açaí\ na\ esquerda\,\ vista\ de\ cima\,\ sobre\ uma\ mesa\ de\ madeira\ escura_\ 23-12-2024\ at\ 17-03-26.jpeg'); /* Substitua 'sua-imagem.jpg' pela URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Adiciona a sobreposição */
+.background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Ajuste a opacidade para escurecer mais ou menos */
+    z-index: 1;
+}
+
+/* Estiliza o menu */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2; /* Garante que o menu fique acima da sobreposição */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+/* Estiliza o letreiro */
+.banner {
+    position: absolute;
+    top: 50%; /* Move o letreiro para 30% da altura da tela */
+    right: 20%; /* Move o letreiro para 10% da borda direita */
+    z-index: 2; /* Garante que o letreiro fique acima da sobreposição */
+    text-align: left; /* Alinha o texto à direita */
+}
+
+.banner h1 {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    white-space: pre-line; /* Permite quebras de linha no texto */
+}
+
+.banner p {
+    color: whitesmoke;
+    font-size: 2rem; 
+}
