@@ -97,7 +97,7 @@ li {
 }
 
 .banner h1 {
-    font-weight: 200;
+    font-weight: 350;
     font-size: 5rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     white-space: pre-line;
@@ -106,7 +106,7 @@ li {
 
 .banner p {
     font-size: 2rem;
-    text-indent: 20px;
+    
 }
 
 .CaixaAcai{
