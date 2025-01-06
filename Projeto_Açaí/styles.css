@@ -9,8 +9,8 @@
 
 
 /* Define a foto de fundo */
-.background {
-    background-image: url('imgs/uma\ tigela\ de\ açaí\ na\ esquerda\,\ vista\ de\ cima\,\ sobre\ uma\ mesa\ de\ madeira\ escura_\ 23-12-2024\ at\ 17-03-26.jpeg');
+.background_menu {
+    background-image: url(../Projeto_Açaí/imgs/fundo-principal.jpg);
     /* Substitua 'sua-imagem.jpg' pela URL da sua imagem */
     background-size: cover;
     background-position: center;
@@ -19,21 +19,19 @@
 }
 
 /* Adiciona a sobreposição */
-.background::after {
+.background_menu::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    /* Ajuste a opacidade para escurecer mais ou menos */
+    background-image: radial-gradient(circle,transparent,  rgba(0, 0, 0, 0.301));
     z-index: 1;
 }
 
 /* Estiliza o menu */
 .menu {
-    
     position: absolute;
     top: 50px;
     right: 16em;
@@ -53,7 +51,7 @@ li {
     margin: 0 10px;
   }
   
-  a {
+a {
     position: relative;
     text-decoration: none;
     color: whitesmoke;
@@ -64,54 +62,58 @@ li {
   a::after {
     content: '';
     position: absolute;
-    bottom: -5px; /* Distância da linha em relação ao texto */
-    left: 0; /* Começa na esquerda */
-    width: 0; /* Inicialmente invisível */
-    height: 2px; /* Altura da borda */
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
     background-color: white;
     transition: width 0.3s ease-in-out; /* Anima somente a largura */
     
   }
   
   a:hover::after {
-    width: 100%; /* Expande a linha */
+    width: 100%;
   }
 
-
-
-/* Estiliza o letreiro */
-.banner {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 250;
-    /*background-image: linear-gradient(to bottom, white, rgb(245, 230, 230)); */
-    color: rgb(245, 230, 230);
-    position: absolute;
-    top: 30%;
-    /* Move o letreiro para 30% da altura da tela */
-    right:8%;
-    /* Move o letreiro para 10% da borda direita */
-    z-index: 2;
-    /* Garante que o letreiro fique acima da sobreposição */
-    text-align: left;
-    /* Alinha o texto à direita */
-}
-
-.banner h1 {
-    font-weight: 350;
-    font-size: 5rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    white-space: pre-line;
-    /* Permite quebras de linha no texto */
-}
-
-.banner p {
-    font-size: 2rem;
-    
-}
-
-.CaixaAcai{
+#frutaAcai{
     transition: background-color 0.3s ease;
     position: absolute;
     top: 2%;
-    left: 1%;
+    left: 2%;
+    z-index: 2;
+    width: 80px;
+}
+
+#caixaAcai{
+  position: absolute;
+  top: 3%;
+  left: 93%;
+  z-index: 2;
+  
+}
+
+.saiba-mais{ /* Botão Saiba Mais*/
+  font: normal 500 1.5em 'Exo 2', sans-serif;
+  color: whitesmoke;
+  z-index: 2;
+  position: absolute;
+  top:90%;
+  left:45%;
+}
+
+.material-symbols-outlined { /* Seta para baixo do lado de "Saiba Mais"*/
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#logoAcai{ /* Logo do Açaí no topo do site*/
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  z-index: 2;
+  size: 1em;
+  width: 500px;
 }
