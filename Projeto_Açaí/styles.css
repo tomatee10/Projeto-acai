@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* background da hero  */
+.hero {
+    background-image: url(imgs/fundo-principal.jpg);
+    height: 100svh;
+    background-size: cover;
+    background-position: center center;
+}
+
+nav{
+    display: flex;
+    position: absolute;
+    list-style: none;
+    top: 5rem;
+    right: 10rem;  
+}
+
+/* configurações da lista de links */
+.nav__ul {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.nav__li{
+    
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav__link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s;
+}
+
+.nav__link:hover::after{
+    width: 100%;
+}
+
+
+
+
