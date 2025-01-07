@@ -1,0 +1,64 @@
+
+.menu__img{
+    display: flex;
+    justify-content: center;
+    
+}
+.menu__img img{
+    width: 300px;
+    margin-top: 8em;
+    
+}
+
+.menu__text{
+    font-family: "Sansita Swashed", sans-serif;
+    color:whitesmoke;
+    margin:2.5em;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.795);
+    
+}
+
+.menu__text h1{
+    font-size: 3em;
+    text-align: center;
+    margin-left: -0.8em;
+    margin-bottom: 0.5em;
+}
+
+.menu__text h2{
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: -1em;
+}
+
+.menu__end{
+    color:whitesmoke;
+    font-family: "Exo 2", sans-serif;
+}
+
+@media (min-width: 768px) {
+
+    .menu{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .menu__img img{
+        width: 500px;
+        margin: 8em;
+    }
+
+    .menu__text h1{
+        font-size: 5em;
+        text-align: left;
+    }
+
+    .menu__text h2{
+        font-size: 2em;
+        text-align:left;
+        margin-left:-2em;
+    }
+    .menu__end{
+        text-align: center;
+    }
+}

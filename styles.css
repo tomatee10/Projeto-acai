@@ -6,31 +6,28 @@
 /* background da hero  */
 .hero {
     /*background-image: url(imgs/fundo-principal.jpg);*/
-    height: 100svh;
+    height: 100%;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+
 }
 
 nav {
-    display: flex;
+    display: grid;
+    width: 90%;
     position: absolute;
     list-style: none;
-    top: 5rem;
-    right: 10rem;
+    margin-top: 3em;
+    margin-left:1em;
 }
 
 /* configurações da lista de links */
 .nav__ul {
     display: flex;
+    justify-content: center;
     gap: 5rem;
     list-style: none;
 }
-
-/*.nav__li{
-    
-}
-*/
 
 .nav__link {
     text-decoration: none;
