@@ -6,11 +6,9 @@
 
 /* background da hero  */
 .hero {
-    /*background-image: url(imgs/fundo-principal.jpg);*/
-    height: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center center;
-
 }
 
 nav {
@@ -28,7 +26,7 @@ nav {
 .nav__ul {
     display: flex;
     justify-content: right;
-    gap: 4rem;
+    gap: 1rem;
     list-style: none;
 }
 
@@ -37,6 +35,7 @@ nav {
     color: #fff;
     position: relative;
     font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
 }
 
 .nav__link::after {
@@ -59,8 +58,10 @@ nav {
     vertical-align:text-bottom;
     text-align: center;
 }
-
-/* Responsabilidade da .hero*/
+#arrow-down svg{ /* editar a posição da seta para baixo do lado de "SOBRE NÓS"*/
+    vertical-align: text-bottom;
+}
+/* RESPONSABILIDADE DA ".hero"*/
 
 @media (max-width: 500px) {
     /*Celulares */
@@ -100,4 +101,47 @@ nav {
     .nav__ul {
         gap:6em;
     }
+}
+
+@media (orientation: landscape) {
+    /* Estilos para dispositivos em modo paisagem */
+    .hero{
+        background-image: url(imgs/background/fundo-celular\(700x300\).jpg);
+    }
+    nav {
+        width: 90%;
+    }
+    .nav__ul {
+        gap:6em;
+    }
+}
+
+.sobre-nos{
+    height: 100px;
+    background-color: #f09e51;
+
+    border-style: solid;
+    border-inline:none;
+    border-color: #866026 ;
+
+    font-family: "Exo 2", sans-serif;
+    color:#724932;
+    
+}
+.sobre-nos h1{
+    text-align: center;
+    padding: 0.3em;
+    font-size: 3em;
+}
+
+
+
+/* PAGE "SOBRE NOS/ABOUT US" (hero2) */
+
+.hero2{
+    background-color: #9025c2;
+
+    font-family: "Exo 2", sans-serif;
+    color:whitesmoke;
+    
 }
