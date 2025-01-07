@@ -61,37 +61,26 @@ nav {
 @media (max-width: 768px) {
     /*Celulares */
     .hero {
-        background-image: url(fundos/fund-sobre-nos\(700\)alt.jpg);
-    }
-}
-
-@media (min-width: 451px) and (max-width: 768px) {
-    /*Tablets */
-    .hero {
-        background-image: url(fundos/fund-sobre-nos\(700\)alt.jpg);
+        background-image: url(imgs/background/fundo-principal\(480\).jpg);
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    /*Tablets */
-    .hero {
-        background-image: url(fundos/fundo-sobre-nos\(1336\).jpg);
+    /* Estilos para tablets e telas pequenas */
+    .hero{
+        background-image: url(imgs/background/fundo-principal\(768\).jpg);
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-    /*Desktops */
-    .hero {
-        background-image: url(fundos/fundo-sobre-nos\(1920\).jpg);
-        height: 100svh;
-
+    /* Estilos para telas médias */
+    .hero{
+        background-image: url(imgs/background/fundo-principal\(1024\).jpg);
     }
 }
-
 @media (min-width: 1441px) {
-    /*Desktops */
-    .hero {
-        background-image: url(fundos/fundo-sobre-nos\(1920\).jpg);
-
+    /* Estilos para telas grandes */
+    .hero{
+        background-image: url(imgs/background/fundo-principal.jpg);
     }
 }
