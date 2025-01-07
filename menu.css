@@ -1,3 +1,6 @@
+.menu__icon{
+    display: none;
+}
 
 .menu__img{
     display: flex;
@@ -32,9 +35,21 @@
 }
 
 .menu__end{
-    color:whitesmoke;
+    color:rgb(245, 218, 188);
     font-family: "Exo 2", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 4px; /* Aumenta o espaço entre a palavra e o sublinhado */
+    text-decoration-thickness: 0.2em; /* Adiciona espessura ao sublinhado */
+    text-align: center;
+    
 }
+
+#caixaAcai{
+    padding-left: 1em;
+    display: none;
+}
+
+
 
 @media (min-width: 768px) {
 
@@ -59,6 +74,17 @@
         margin-left:-2em;
     }
     .menu__end{
-        text-align: center;
+        font-size: 2em;
+        position: absolute;
+        bottom:-5%;
+        left:43%;
+        text-decoration-thickness: 3px; /* Adiciona espessura ao sublinhado */
+        text-underline-offset: 0.3em; /* Aumenta o espaço entre a palavra e o sublinhado */
+    }
+    .menu__icon{
+        display:inline-block;
+        position:absolute;
+        left:1em;
+        top:-2em;
     }
 }
