@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-
-/* background da hero  */
-.header {
+.bg{ /* background da hero  */
     height: 100vh;
     background-size: cover;
     background-position: center center;
-   background-image: url(imgs/background/fundo-celular\(300x700\).jpg)
+    background-image: url(imgs/background/fundo-celular\(300x700\).jpg)
 }
+
 
 nav {
     display: flex;
@@ -60,8 +59,6 @@ nav {
     text-align: center;
 }
 
-
-
 /*texto e imagens da hero */
 
 .hero__section {
@@ -84,7 +81,6 @@ nav {
 .hero__tittle{
     color:whitesmoke;
     margin:2.5em;
-    
     
 }
 
@@ -113,4 +109,41 @@ nav {
    font-family: "poppins", sans-serif;
     font-size: 1.3em;
    color: #fff;
+}
+
+
+/* MEDIA QUERY*/
+
+@media (min-width: 768px){
+    .hero__img img{
+        width: 500px;
+    }
+
+    .hero__tittle h1{
+        font-size: 4.5em; 
+    }
+    .hero__tittle p{
+        font-size: 2em;
+    
+    }
+    #saiba__mais{
+        font-size: 2em;
+     }
+    .nav__link {
+        font-size:1.4em;
+    }
+}
+
+@media (orientation:landscape){
+    .bg {
+        background-image: url(imgs/background/fundo-principal\(768\).jpg);
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(min-width: 1024px){/* Laptop/ tablet deitado*/
+    .bg{
+        background-image: url(imgs/background/fundo-principal\(1080\).jpg);
+    }
 }
