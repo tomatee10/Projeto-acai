@@ -11,6 +11,10 @@
     background-image: url(imgs/background/fundo-celular\(300x700\).jpg)
 }
 
+#icon__Acai{
+    display:none;
+}
+
 
 nav {
     display: flex;
@@ -142,8 +146,60 @@ nav {
     }
 }
 
-@media(min-width: 1024px){/* Laptop/ tablet deitado*/
+@media(min-width: 1024px) and (max-width: 1200px){/* Laptop/ tablet deitado*/
     .bg{
         background-image: url(imgs/background/fundo-principal\(1080\).jpg);
     }
+    #icon__Acai{
+        display:block;
+    }
 }
+
+@media (min-width: 1266px) and (max-width:1400px){
+    nav {
+        transform: translateX(50%); /* ajuste para alinhar no centro exato */
+        left:25%;
+        top: 3.5rem;
+        margin-left: 5rem;  
+    }    
+
+    .nav__ul {
+        gap: 6rem;
+
+    }
+
+    .nav__link {
+        font-size: 1.1rem;
+    }
+    #icon__Acai{
+        display:block;
+        position: absolute;
+        top:1.5em;
+        left: 1.5em;
+    }
+}
+
+@media(min-width: 1400px){
+   
+    nav {
+        transform: translateX(50%); /* ajuste para alinhar no centro exato */
+        left:25%;
+        top: 3.6rem;
+        margin-left: 5rem;
+    }    
+
+    .nav__ul {
+        gap: 6rem;
+
+    }
+
+    .nav__link {
+        font-size: 1.3rem;
+    }
+    #icon__Acai{
+        display:block;
+        position: absolute;
+        top:2em;
+        left: 2em;
+    }
+}    
