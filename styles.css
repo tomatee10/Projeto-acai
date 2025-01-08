@@ -147,3 +147,22 @@ nav {
         background-image: url(imgs/background/fundo-principal\(1080\).jpg);
     }
 }
+
+@media(min-width: 1200px){
+   
+    nav {
+        transform: translateX(50%); /* ajuste para alinhar no centro exato */
+        left:45%;
+        top: 3.6rem;
+        margin-left: 5rem;
+    }    
+
+    .nav__ul {
+        gap: 6rem;
+
+    }
+
+    .nav__link {
+        font-size: 1.3rem;
+    }
+}    
