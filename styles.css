@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
+
 .bg {
     /* background da hero  */
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center center;
     background-image: url(imgs/background/fundo-celular\(300x700\).jpg)
 }
+
 
 #icon__Acai {
     display: none;
@@ -37,6 +39,7 @@ nav {
     list-style: none;
 }
 
+
 .nav__link {
     text-decoration: none;
     color: #fff;
@@ -44,6 +47,7 @@ nav {
     font-family: 'Poppins', sans-serif;
     white-space: nowrap;
 }
+
 
 .nav__link::after {
     content: "";
@@ -56,9 +60,11 @@ nav {
     transition: width 0.3s;
 }
 
+
 .nav__link:hover::after {
     width: 100%;
 }
+
 
 .material-symbols-outlined {
     color: #f5f5f5;
@@ -76,25 +82,26 @@ nav {
     /* Centraliza horizontalmente */
     text-align: center;
     /* Centraliza o texto dentro de cada elemento */
+
 }
+
 
 .hero__img {
-    display: flex;
     justify-content: center;
-
 }
+
 
 .hero__img img {
     width: 300px;
     margin-top: 8em;
-
 }
+
 
 .hero__tittle {
     color: whitesmoke;
     margin: 2.5em;
-
 }
+
 
 .hero__tittle h1 {
     font-family: "Sansita Swashed", sans-serif;
@@ -106,27 +113,34 @@ nav {
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.822);
 }
 
+
 .hero__tittle p {
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.3em;
     text-align: center;
 
     white-space: nowrap;
-    text-shadow: 1.5px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 1.5px 1px 3px rgba(0, 0, 0, 0.493);
 }
 
 /* saiba mais */
 
-#saiba__mais {
-    font-family: "poppins", sans-serif;
-    font-size: 1.3em;
+.hero__about-us {
+    text-align: center;
+}
+
+.hero__about-us h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
     color: #fff;
 }
 
 
 /* MEDIA QUERY*/
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1265px) {
+
+    /* Tablets e notebooks pequenos*/
     .hero__img img {
         width: 500px;
     }
@@ -136,8 +150,7 @@ nav {
     }
 
     .hero__tittle p {
-        font-size: 2em;
-
+        font-size: 1.5em;   
     }
 
     #saiba__mais {
@@ -150,6 +163,8 @@ nav {
 }
 
 @media (orientation:landscape) {
+
+    /*Smartphones virados horizontalmente */
     .bg {
         background-image: url(imgs/background/fundo-principal\(768\).jpg);
         height: 100%;
@@ -157,19 +172,14 @@ nav {
     }
 }
 
-@media(min-width: 769px) and (max-width: 1265px) {
-
-    /* Laptop/ tablet deitado*/
-    .bg {
-        background-image: url(imgs/background/fundo-principal\(1080\).jpg);
-    }
-
-    #icon__Acai {
-        display: block;
-    }
-}
-
 @media (min-width: 1266px) and (max-width:1449px) {
+    /* Notebooks e monitores grandes*/
+
+    .bg {
+        height: 100%;
+        /* bg pegar toda a tela*/
+    }
+
     nav {
         transform: translateX(50%);
         /* ajuste para alinhar no centro exato */
@@ -193,9 +203,40 @@ nav {
         top: 1.5em;
         left: 1.5em;
     }
+
+    .hero__section {
+        display: flex;
+        flex-direction: row;
+        /* Coloca os elementos em uma coluna, um abaixo do outro */
+        align-items: center;
+        /* Centraliza horizontalmente */
+        text-align: center;
+        /* Centraliza o texto dentro de cada elemento */
+        gap: 20%;
+        /* aumentar a distancia interna entre os itens in row*/
+
+    }
+
+    .hero__img img {
+        width: 500px;
+        margin-inline: 35%;
+        height: 100%;
+    }
+
+    .hero__tittle h1 {
+        font-size: 5em;
+    }
+
+    .hero__tittle p {
+        font-size: 1.5em;
+    }
 }
 
 @media(min-width: 1450px) {
+
+    .bg {
+        height: 100%;
+    }
 
     nav {
         transform: translateX(50%);
@@ -218,6 +259,33 @@ nav {
         display: block;
         position: absolute;
         top: 2em;
-        left: 2em;
+        left: 2.5em;
+    }
+
+    .hero__section {
+        display: flex;
+        flex-direction: row;
+        /* Coloca os elementos em uma coluna, um abaixo do outro */
+        align-items: center;
+        /* Centraliza horizontalmente */
+        text-align: center;
+        /* Centraliza o texto dentro de cada elemento */
+        gap: 20%;
+        /* aumentar a distancia interna entre os itens in row*/
+
+    }
+
+    .hero__img img {
+        width: 500px;
+        margin-inline: 35%;
+        height: 100%;
+    }
+
+    .hero__tittle h1 {
+        font-size: 5em;
+    }
+
+    .hero__tittle p {
+        font-size: 1.5em;
     }
 }
