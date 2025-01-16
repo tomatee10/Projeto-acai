@@ -31,7 +31,6 @@ nav {
 /* configurações da lista de links */
 .nav__ul {
     display: flex;
-    justify-content: right;
     gap: 1.8rem;
     list-style: none;
 }
@@ -65,9 +64,21 @@ nav {
     text-align: center;
 }
 
-/*texto e imagens da hero */
+/*media query para pc*/
 
+@media screen and (min-width: 1024px) {
+    header{
+        display: flex;
+       justify-content: right;
+       margin-inline: 30px;
+    }
 
+    .nav__ul {
+        display: flex;
+        gap: 5rem;
+        list-style: none;
+    }
+  }
 
 
 
