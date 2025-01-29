@@ -7,7 +7,10 @@
 
     <link rel="shortcut icon" href="icone/iconeAcai.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="footer.css">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,52 +32,82 @@
 <body>
     <!-- HERO SECTION !-->
     <div class="bg">
-        <img src="imgs/iconeAcaimin100.PNG" alt="icone acai min" id="icon__Acai">
-        <div class="header">
-            <header>
-                <nav>
-                    <ul class="nav__ul">
+        <div class="acai-icon">
+            <a href="../Projeto-acai/açai.html"> <!--Voltar pagina inicial-->
+                <img src="imgs/iconeAcaimin100.PNG" alt="acai-icon">
+            </a>
+        </div>
 
-                        <li class="nav__li">
-                            <a class="nav__link" href="#">Sobre Nós
-                                <span class="material-symbols-outlined">help</span>
-                            </a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link" href="#">Produtos
-                                <span class="material-symbols-outlined">store</span>
-                            </a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link" href="#">Contatos
-                                <span class="material-symbols-outlined">perm_phone_msg</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+        <header>
+            <nav>
+                <ul class="nav__ul">
 
-            <section class="hero__section">
-                <div class="hero__img">
-                    <img src="imgs/LogoAcai.png" alt="Logo Açaí da Amazônia">
-                </div>
+                    <li class="nav__li">
+                        <a class="nav__link" href="../Projeto-acai/sobre.html"> 
+                            <span class="material-symbols-outlined">help</span> Sobre Nós
+                        </a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__link" href="#"> 
+                            <span class="material-symbols-outlined">store</span> Produtos 
+                        </a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__link" href="#">
+                            <span class="material-symbols-outlined">perm_phone_msg</span> Contatos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-                <div class="hero__tittle">
-                    <h1>Açaí Da <br> Amazônia</h1>
-                    <p>Qualidade Superior, Preço Inferior</p>
-                </div>
-            </section>
+        <section class="hero__section">
+            <div class="hero__img">
+                <img src="imgs/LogoAcai.png" alt="Logo Açaí da Amazônia">
+            </div>
 
-            <section class="hero__about-us">
-                <h1>
-                    Saiba Mais <br>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"fill="#f8f8f8">
-                        <path d="M480-200 240-440l46.67-46.67 193.33 193 193.33-193L720-440 480-200Zm0-248.67-240-240 46.67-46.66 193.33 193 193.33-193L720-688.67l-240 240Z"/>
-                    </svg> <!--Seta p/baixo-->
-                </h1>
-            </section>
-                 
+            <div class="hero__tittle">
+                <h1>Açaí Da <br> Amazônia</h1>
+                <p>Qualidade Superior, Preço Inferior</p>
+                <button class="hero__button"><a href="">Fale conosco</a> !</button>
+            </div>
+            <script>
+                document.querySelector('.hero__button').addEventListener('click', function () {
+                    window.location.href = 'https://www.example.com';
+                });
+            </script>
+        </section>
+
+
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li>
+                    <strong>Endereço:</strong> Rua Diamante, 135, Iguaçu - Ipatinga, MG
+                </li>
+                <li>
+                    <strong> <img src="imgs/instagram-icon.webp" alt=""> Instagram:</strong>
+                    <a href="https://www.instagram.com/acai.da.amazonia.ipa/">@acai.da.amazonia.ipa</a>
+                </li>
+                <li>
+                    <strong>Telefone:</strong> <a href="tel:31975054255">+55 31 97505-4255</a>
+                </li>
+                <li> 
+                    <strong>WhatsApp: </strong>
+                     <a href="https://api.whatsapp.com/send/?phone=%2B5531975054255&text&type=phone_number&app_absent=0" target="_blank"> +55 31 97505-4255
+                     </a>
+                </li>
+            </ul>
+            <div class="footer-copy">
+                <p>&copy; 2025 Açaí da Amazônia Ipatinga. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
 
 </body>
 
