@@ -3,28 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #6a1b9a;
+    
+}
 .bg {
     /* background da hero  */
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-image: url(imgs/background/fundo-celular\(300x700\).jpg)
+    overflow-x: hidden;
+    background-image: linear-gradient(#B31663,#950D59,#7A125F);
+    min-height: 100vh
 }
 
-#icon__Acai {
-    display: none;
-}
 
-header{
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 nav {
     display: flex;
     padding: 10px;
     margin-top: 10px;
+    
 }
 
 
@@ -33,6 +35,7 @@ nav {
     display: flex;
     gap: 1.8rem;
     list-style: none;
+    
 }
 
 .nav__link {
@@ -41,6 +44,9 @@ nav {
     position: relative;
     font-family: 'Poppins', sans-serif;
     white-space: nowrap;
+    font-size: clamp(0.5rem, 1rem, 1.5rem); 
+   
+
 }
 
 .nav__link::after {
@@ -48,7 +54,7 @@ nav {
     position: absolute;
     left: 0;
     bottom: -5px;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 0;
     height: 2px;
     transition: width 0.3s;
@@ -67,18 +73,20 @@ nav {
 /*media query para pc*/
 
 @media screen and (min-width: 1024px) {
-    header{
+    header {
         display: flex;
-       justify-content: right;
-       margin-inline: 30px;
+        justify-content: right;
+        margin-inline: 60px;
     }
 
     .nav__ul {
         display: flex;
-        gap: 5rem;
+        gap: 9rem;
         list-style: none;
     }
-  }
 
-
-
+    
+    .nav__link {    
+        font-size: 1.2em;
+    }
+}

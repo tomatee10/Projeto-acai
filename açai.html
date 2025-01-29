@@ -7,7 +7,10 @@
 
     <link rel="shortcut icon" href="icone/iconeAcai.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="footer.css">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +32,6 @@
 <body>
     <!-- HERO SECTION !-->
     <div class="bg">
-        <img src="imgs/iconeAcaimin100.PNG" alt="icone acai min" id="icon__Acai">
         <div class="header">
             <header>
                 <nav>
@@ -62,19 +64,65 @@
                 <div class="hero__tittle">
                     <h1>Açaí Da <br> Amazônia</h1>
                     <p>Qualidade Superior, Preço Inferior</p>
+                    <button class="hero__button">Fale conosco !</button>
                 </div>
+                <script>
+                    document.querySelector('.hero__button').addEventListener('click', function () {
+                        window.location.href = 'https://www.example.com';
+                    });
+                </script>
             </section>
 
-            <section class="hero__about-us">
-                <h1>
-                    Saiba Mais <br>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"fill="#f8f8f8">
-                        <path d="M480-200 240-440l46.67-46.67 193.33 193 193.33-193L720-440 480-200Zm0-248.67-240-240 46.67-46.66 193.33 193 193.33-193L720-688.67l-240 240Z"/>
-                    </svg> <!--Seta p/baixo-->
-                </h1>
-            </section>
-                 
-    </div>
+
+        </div>
+
+        <!---Sobre Nós -->
+
+        <section class="sobre-nos">
+            <div class="container">
+                <div class="sobre-nos-texto">
+                    <h2>Sobre Nós</h2>
+                    <p>
+                        Nós acreditamos no poder de oferecer experiências inesquecíveis. Nosso compromisso é com
+                        qualidade, sabor e um atendimento que aquece o coração. Desde o primeiro contato até o último
+                        sorriso, somos dedicados a fazer a diferença!
+                    </p>
+                </div>
+
+                <div class="sobre-nos-destaques">
+                    <div class="destaque">
+                        <img src="icon1.svg" alt="Tradição">
+                        <h3>Tradição</h3>
+                        <p>Mais de 10 anos trazendo qualidade e sabor para nossos clientes.</p>
+                    </div>
+                    <div class="destaque">
+                        <img src="icon2.svg" alt="Sabor Único">
+                        <h3>Sabor Único</h3>
+                        <p>Ingredientes selecionados e preparados com amor para você.</p>
+                    </div>
+                    <div class="destaque">
+                        <img src="icon3.svg" alt="Sustentabilidade">
+                        <h3>Sustentabilidade</h3>
+                        <p>Conectados com o meio ambiente e práticas responsáveis.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!--- Footer -->
+            <footer class="footer">
+                <div class="container">
+                  <div class="footer-info">
+                    <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
+                    <p><strong>E-mail:</strong> <a href="mailto:contato@seusite.com">contato@seusite.com</a></p>
+                    <p><strong>Telefone:</strong> <a href="tel:+559999999999">+55 99 99999-9999</a></p>
+                  </div>
+                  <div class="footer-copy">
+                    <p>&copy; 2025 Nome da Empresa. Todos os direitos reservados.</p>
+                  </div>
+                </div>
+              </footer>
+
 
 </body>
 
