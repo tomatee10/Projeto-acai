@@ -34,42 +34,49 @@
     align-items: center;
     flex-direction: column;
     gap: 0.7rem;
+    
 
   }
   
-  .footer .container li {
+  .footer li {
     list-style-type: none;
-
     font-size: 1rem;
-    justify-content: center;
+    
+   
   }
   
-  .footer .container a {
+  .footer  a {
     color: var(--footer-link-clr);
     text-decoration: none;
     transition: color 0.3s ease;
+    
   }
   
-  .footer-info a:hover {
+  .footer a:hover {
     color: var(--default-font-clr);
+
   }
 
-  .footer .container img{
+  .footer img{
     max-width: 25px;
+
   }
   
   .footer-copy {
     margin-top: 1rem;
     font-size: 0.9rem;
     opacity: 0.8;
+
   }
   
   /* Responsividade */
   @media (max-width: 768px) {
     .footer-info p {
       font-size: 0.9rem;
+
     }
     .footer-copy {
       font-size: 0.8rem;
+
     }
   }

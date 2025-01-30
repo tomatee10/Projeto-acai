@@ -3,12 +3,19 @@
     --default-text-clr : #ffffff;
     --subtitle-text-clr: #FFEDF3;
 
+    --default-border-clr: #ffffff;
+    --default-text-shadow: #000000;
+
+    --box-border-clr: #e46f6f86;
+    --box-shadow: #5c0c2a;
+
     --title-font: "Sansita Swashed", cursive;
     --container-font: "Poppins", sans-serif;
 }
 *{
   padding: 0;
   margin: 0;
+  
 }
 
 .acai-icon {
@@ -17,6 +24,13 @@
     left: 1em;
     position: fixed;
     z-index: 2;
+    transition: transform 0.3s ease;
+    
+}
+
+.acai-icon:hover {
+  transform: translateY(-5px);
+
 }
 
 .sobre-nos {
@@ -49,16 +63,17 @@
     margin-bottom: 1em;
     padding-bottom: 0.5em;
     
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px var(--default-text-shadow);
 
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--default-border-clr);
 
   }
   
   .sobre-nos-texto p {
     font-size: 1.3rem;
     line-height: 1.8;
-    color: var(--subtitle-text-clr);/* Texto mais claro */
+    color: var(--subtitle-text-clr); /* Texto mais claro */
+
   }
   
   .sobre-nos-destaques {
@@ -66,22 +81,25 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+
   }
   
   .destaque {
     background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(228, 111, 111, 0.527);
+    border: 2px solid var(--box-border-clr);
     border-radius: 12px;
     padding: 1.5rem;
     text-align: center;
     flex: 1 1 calc(33.333% - 2rem);
     max-width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   }
   
   .destaque:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
   }
   
   .destaque img {
@@ -90,7 +108,7 @@
     
     margin: 1rem;
     border-radius: 10px;
-    box-shadow: 2px 2px 3px rgb(92, 12, 42);
+    box-shadow: 2px 2px 3px var(--box-shadow);
    
   }
   
@@ -98,13 +116,15 @@
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #f3decd; /* Destaque no subtítulo */
-    text-shadow: 1px 2px 3px rgb(92, 12, 42);
+    text-shadow: 1px 2px 3px var(--box-shadow);
+
   }
   
   .destaque p {
     font-size: 1rem;
     line-height: 1.5;
     color: #FFEDF3;
+
   }
   
   .sobre-nos-imagem img {
@@ -112,38 +132,43 @@
     max-width: 600px;
     border-radius: 16px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
   }
   
   /* Responsividade */
   @media (max-width: 768px) {
 
     .acai-icon {
-      
       display: none;
-    }
 
-    
+    }
 
     .sobre-nos-destaques {
       flex-direction: column;
       gap: 1.5rem;
+
     }
     .sobre-nos{
       margin-top: 1em;
+
     }
     .destaque {
       flex: 1 1 100%;
+
     }
     
     .sobre-nos-texto h1 {
       font-size: 3.5em;
+
     }
 
     .sobre-nos-texto h2 {
       font-size: 2rem;
+
     }
   
     .sobre-nos-texto p {
       font-size: 1.3rem;
+
     }
   }

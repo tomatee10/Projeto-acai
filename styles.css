@@ -3,6 +3,11 @@
     --bg-clr: #53013f;
     --default-font-clr: #fff;
 
+    --main-title-clr: #f5f5f5;
+
+    --main-button-clr: #313830;
+    --main-buttom-border: #ffffff;
+
     --footer-link-clr: #FFC1E3;
 
     --footer-font: "Poppins", sans-serif;
@@ -31,7 +36,7 @@
 
 
 .hero__tittle {
-    color: whitesmoke;
+    color: var(--main-title-clr);
     font-size: clamp(0.5rem, 1rem, 6rem);
 }
 
@@ -63,8 +68,8 @@
     display: block;
     margin: 2em auto;
     padding: 10px;
-    background-color: #2D342C;
-    color: white;
+    background-color: var(--main-button-clr);
+    color: var(--default-font-clr);
     border: none;
     border-radius: 15px;
     font-family: "Poppins", sans-serif;
@@ -73,17 +78,19 @@
 }
 
 .hero__button a {
-    color: white;
+    color: var(--default-font-clr);
     text-decoration: none;
 
 }
 
 .hero__button:hover {
     transition: 0.2s;
-    background-color: #313830;
-    border: 1px solid white;
+    background-color: var(--main-button-clr);
+    border: 1px solid var(--main-buttom-border);
 
 }
+
+
 
 @media screen and (min-width: 1024px) {
     .hero__section {

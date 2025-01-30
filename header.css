@@ -12,6 +12,7 @@ body{
     overflow-x: hidden;
     background-image: linear-gradient(#B31663,#950D59,#7A125F);
     min-height: 100vh
+    
 }
 
 
@@ -20,6 +21,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 nav {
@@ -45,7 +47,6 @@ nav {
     font-family: 'Poppins', sans-serif;
     white-space: nowrap;
     font-size: clamp(0.5rem, 1rem, 1.5rem); 
-   
 
 }
 
@@ -58,10 +59,12 @@ nav {
     width: 0;
     height: 2px;
     transition: width 0.3s;
+
 }
 
 .nav__link:hover::after {
     width: 100%;
+
 }
 
 .material-symbols-outlined {
@@ -78,16 +81,18 @@ nav {
         justify-content: right;
         margin-inline: 60px;
         margin-top: 1em;
+
     }
 
     .nav__ul {
         display: flex;
         gap: 9rem;
-        list-style: none;
+
     }
 
     
     .nav__link {    
         font-size: 1.2em;
+
     }
 }
