@@ -1,0 +1,94 @@
+
+:root{
+    --default-prod-font-clr: white;
+
+    --default-font: "Poppins", sans-serif;
+    --title-font: "Sansita Swashed", cursive;
+}
+
+body {
+    font-family: var(--default-font);
+}
+
+.hero {
+    color: var(--default-prod-font-clr);
+    max-width:1200px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+.hero h2 {
+    color: #500f0fd7;
+    background-color:#f3decd;
+    padding: 1em;
+    font-size: 1.8em;
+
+    border: 3px solid #e46f6f86;
+
+}
+
+.hero_title{
+    margin:auto;
+    padding-top:1em;
+    color: var(--default-prod-font-clr);
+    font-family: var(--title-font);
+    border-bottom: 1px solid black;
+
+    font-size: 4em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    
+    text-shadow: 1px 1px 2px var(--default-text-shadow);
+
+    border-bottom: 1px solid var(--default-border-clr);
+
+}
+
+.products-section {
+    padding-bottom:1em;
+    display: flex;
+    flex-direction: row;
+    gap: 2.3em;
+    flex-wrap: wrap;
+    
+
+    
+}
+
+.products-section img{
+    max-width: 250px;
+    max-height: 250px;
+    margin:0.5em;
+    border-radius: 10px;
+}
+
+
+.product {
+    border: 3px solid #e46f6f86;
+    max-width: 270px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin-block:1em;
+    text-align: center;
+    padding-bottom:2em;
+}
+
+.product h3 {
+    color: #f3decd;
+    text-shadow: 1px 1px 1px rgb(110, 4, 4);
+    margin:0.5em;
+
+}
+
+.product p {
+    padding-inline: 10%;
+}
+
+.product ul {
+    list-style-type: none;
+    padding: 5%;
+    font-style: italic;
+}

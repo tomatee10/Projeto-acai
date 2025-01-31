@@ -5,8 +5,8 @@
 
     --main-title-clr: #f5f5f5;
 
-    --main-button-clr: #313830;
-    --main-buttom-border: #ffffff;
+    --main-button-clr: #ddc496;
+    --main-buttom-border: #583c06;
 
     --footer-link-clr: #FFC1E3;
 
@@ -69,7 +69,7 @@
     margin: 2em auto;
     padding: 10px;
     background-color: var(--main-button-clr);
-    color: var(--default-font-clr);
+    color:#950D59;
     border: none;
     border-radius: 15px;
     font-family: "Poppins", sans-serif;
@@ -78,7 +78,7 @@
 }
 
 .hero__button a {
-    color: var(--default-font-clr);
+    color: #950D59;
     text-decoration: none;
 
 }
@@ -86,7 +86,7 @@
 .hero__button:hover {
     transition: 0.2s;
     background-color: var(--main-button-clr);
-    border: 1px solid var(--main-buttom-border);
+    border: 3px solid var(--main-buttom-border);
 
 }
 
