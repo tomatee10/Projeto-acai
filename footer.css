@@ -8,10 +8,12 @@
 
   --bg-clr: #53013f;
   --default-font-clr: #fff;
+  --hover-clr: #f3decd;
 
   --footer-link-clr: #FFC1E3;
 
   --footer-font: "Poppins", sans-serif;
+  
 }
 
 .footer {
@@ -53,7 +55,7 @@
   }
   
   .footer a:hover {
-    color: var(--default-font-clr);
+    color: var(--hover-clr);
 
   }
 
