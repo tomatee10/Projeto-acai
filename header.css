@@ -10,7 +10,7 @@ body{
 .bg {
     /* background da hero  */
     overflow-x: hidden;
-    background-image: linear-gradient(#B31663,#950D59,#7A125F);
+    background-image: linear-gradient(#d43a85,#950D59,#7A125F);
     min-height: 100vh
     
 }
