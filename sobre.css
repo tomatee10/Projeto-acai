@@ -22,7 +22,7 @@
     position: absolute;
     top:1em;
     left: 1em;
-    position: fixed;
+    
     z-index: 2;
     transition: transform 0.3s ease;
     
