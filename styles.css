@@ -84,10 +84,9 @@
 }
 
 .hero__button:hover {
-    transition: 0.2s;
-    background-color: var(--main-button-clr);
-    border: 3px solid var(--main-buttom-border);
-
+    transition: 0.3s;
+    background-color: #f1d7a6;
+   
 }
 
 
