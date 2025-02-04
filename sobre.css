@@ -134,6 +134,17 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 
   }
+
+  button{
+    background:#5c0c2a;
+    border:none;
+    display: none;
+   
+  }
+  button a{
+    color: white;
+    text-decoration: none;
+  }
   
   /* Responsividade */
   @media (max-width: 768px) {
@@ -170,5 +181,17 @@
     .sobre-nos-texto p {
       font-size: 1.3rem;
 
+    }
+
+    button{
+      display:block;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom:2em;
+      padding:2em;
+      background: #53013f;
+      border:none;
+      font-size: 1.2em;
     }
   }
